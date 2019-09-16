@@ -52,7 +52,7 @@ class App extends Component {
       <div className="App">
         <Instructions complete={true}/>
 
-        <Counter count={this.state.contacts.length} ref={this._child}/>
+        <Counter ref={this._child}/>
 
         {this.state.contacts.map(x => (
           <Contact id={x.id} name={x.name} nickname={x.nickname} hobby={x.hobby} />
